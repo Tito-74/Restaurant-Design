@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+header{
+   background-image: url(./images/bg.png); 
+   background-size: cover;
+   background-position: center center;
+   min-height: 100vh;
+}
+.container{
+    /* display: flex; */
+    width: 1000px;
+    /* flex-direction: column; */
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.pre-nav{
+    font-size: 1.7rem;
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+
+}
+.logo{
+    color:#3a5c91;
+    font-weight: bold;
+    font-size: 2rem;
+}
+nav{
+    padding: 0.2rem 0;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    flex: 1 auto;
+}
+
+nav li a{
+    background-color: #3a5c91;
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+nav a.active{
+    background-color: #fff;
+    color:#3a5c91 ;
+    font-weight: bold;
+}
+nav a.highlight{
+    background-color: #1c60ce;
+    color: #fff;
+}
+nav a:hover{
+    opacity: 0.8;
+}
+.content{
+    display: flex;
+    /* flex: 1; */
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    margin-top: 3rem;
+    font-size: 1.5rem;
+
+}
+.content h1{
+    background-color:#3771cf ;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    font-weight: 200;
+
+}
+.white-link{
+    background-color: #fff;
+    color: #3a5c91;
+    padding: 0.5rem;
+
+}
+.teal-link{
+    background-color: #3a5c91;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+/* media queries */
+@media screen and (max-width:700px){
+    .pre-nav{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    nav{
+        /* flex-direction: column; */
+
+    }
+    .content{
+        font-size: 1rem;
+    }
+}
